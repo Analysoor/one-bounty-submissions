@@ -8,6 +8,22 @@ export const siteConfig = {
 			label: "Home",
 			href: "/",
 		},
+		{
+			label: "Day ZERO",
+			href: "/day/0",
+		},
+		{
+			label: "Day ONE",
+			href: "/day/1",
+		},
+		{
+			label: "Day TWO",
+			href: "/day/2",
+		},
+		{
+			label: "Day THREE",
+			href: "/day/3",
+		},
 	],
 	navMenuItems: [
 
