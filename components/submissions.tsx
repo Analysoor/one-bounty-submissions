@@ -9,11 +9,11 @@ import {ScrollShadow} from "@nextui-org/scroll-shadow";
 import {Card, CardBody, CardFooter, CardHeader} from "@nextui-org/card";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
-import ScrollToTop from "@/components/scroll-top-top";
 import {useEffect, useState} from "react";
 import {shuffleArray} from "@/utils/array";
 import {useWindowSize} from "@/components/use-window-size";
 import "react-image-gallery/styles/css/image-gallery.css";
+import ScrollToTop from "@/components/scroll-top-top";
 
 const renderVideoUrl = (video: any) => {
   return (
@@ -32,7 +32,7 @@ export default function Submissions() {
   }, []);
 
   return (
-    <>
+    <div className={'w-full'}>
       <div className="mt-8 w-full">
         {
           randomlySortedSubmissions.map((s, idx) => (
@@ -84,6 +84,6 @@ export default function Submissions() {
         }
       </div>
       <ScrollToTop/>
-    </>
+    </div>
   );
 }

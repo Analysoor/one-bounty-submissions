@@ -3,8 +3,7 @@ import { Snippet } from "@nextui-org/snippet";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { title, subtitle } from "@/components/primitives";
 import {GithubIcon} from "@/components/icons";
-import dynamic from "next/dynamic";
-const Submissions = dynamic(() => import('@/components/submissions'), { ssr: false }) as any;
+import Submissions from "@/components/submissions";
 
 export default function Home() {
 	return (
@@ -41,11 +40,7 @@ export default function Home() {
 						Submissions are randomly ordered
 					</span>
 			</Snippet>
-			{
-				Submissions && (
-					<Submissions/>
-				)
-			}
+			<Submissions/>
 		</section>
 	);
 }
