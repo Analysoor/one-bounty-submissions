@@ -13,7 +13,7 @@ export default function Home() {
 				<br/>
 				<h1 className={title()}>Art bounty submissions&nbsp;</h1>
 				<h2 className={subtitle({class: "mt-4"})}>
-					Pre-selected submissions
+					Pre-selected Submissions
 				</h2>
 			</div>
 
