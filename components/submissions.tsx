@@ -14,6 +14,7 @@ import {shuffleArray} from "@/utils/array";
 import {useWindowSize} from "@/components/use-window-size";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ScrollToTop from "@/components/scroll-top-top";
+import {getSubmissionKey} from "@/utils/submission";
 
 const renderVideoUrl = (video: any) => {
   return (
@@ -58,7 +59,7 @@ export default function Submissions() {
                 </div>
               </CardHeader>
               <CardBody className="px-3 py-0 text-small text-default-400">
-                <div key={idx}>
+                <div key={getSubmissionKey(s)}>
                   <div className={'mb-6'}>
                     <ScrollShadow className="max-h-[300px]">
                       <span className="text-default-600 whitespace-break-spaces">{s.description}</span>
