@@ -2,8 +2,8 @@ import { Link } from "@nextui-org/link";
 import { Snippet } from "@nextui-org/snippet";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { title, subtitle } from "@/components/primitives";
-import {GithubIcon} from "@/components/icons";
-import Submissions from "@/components/submissions";
+import {GithubIcon,DiscordIcon} from "@/components/icons";
+import SubmissionsDays from "@/components/submissions-days";
 
 export default function Day1() {
 	return (
@@ -13,11 +13,19 @@ export default function Day1() {
 				<br/>
 				<h1 className={title()}>Art bounty submissions&nbsp;</h1>
 				<h2 className={subtitle({class: "mt-4"})}>
-					Submissions Day ONE
+					Submissions for day 1 voting
 				</h2>
 			</div>
 
 			<div className="flex gap-3 flex-col sm:flex-row">
+			<Link
+					isExternal
+					className={buttonStyles({variant: "bordered", radius: "full"})}
+					href={'https://discord.com/invite/analysoor'}
+				>
+					<DiscordIcon size={20}/>
+					Vote on Discord
+				</Link>
 				<Link
 					isExternal
 					href={'https://docs.google.com/spreadsheets/d/1O4lLBqlND_lVZnckIMG2pR0HVhMrPSRADMg2IvlX12I/'}
@@ -37,17 +45,11 @@ export default function Day1() {
 
 			<Snippet hideSymbol hideCopyButton variant="flat">
 					<span>
-						Submissions are randomly ordered
+						Vote on discord
 					</span>
 			</Snippet>
-			<h2 className={title({class: "mt-4"})}>
-				COMING SOON
-			</h2>
-			{
-				/* TODO: filter submissions selected for day one
-				 *	<Submissions/>
-				 */
-			}
+			<SubmissionsDays day={1}/>
+		
 		</section>
 	);
 }

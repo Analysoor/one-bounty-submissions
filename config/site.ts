@@ -9,20 +9,8 @@ export const siteConfig = {
 			href: "/",
 		},
 		{
-			label: "Day ZERO",
-			href: "/day/0",
-		},
-		{
-			label: "Day ONE",
+			label: "Voting Day 1",
 			href: "/day/1",
-		},
-		{
-			label: "Day TWO",
-			href: "/day/2",
-		},
-		{
-			label: "Day THREE",
-			href: "/day/3",
 		},
 	],
 	navMenuItems: [

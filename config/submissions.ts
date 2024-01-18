@@ -8,34 +8,73 @@ export type Submission = {
 
 export const submissions: Submission[] = [
   {
-    name: 'Fractaloom',
-    description: 'A friend of mine working in web3 asked me to create some arts, so spent some spare time to it. I chose to create geometric art as it offers an effective means to produce distinct individual artworks within a large collection. I utilised the blockhashPickedNumber to select the color palettes and slot to manage the randomness of mathematical transformations applied to geometric shapes. This idea of doing mathematical transformations was inspired by the blockchain hashing transformations.',
-    authorGithub: 'Fractaloom',
-    artPiecesUrl: ['/submissions/Fractaloom/1.jpg', '/submissions/Fractaloom/2.jpg', '/submissions/Fractaloom/3.jpg', '/submissions/Fractaloom/4.jpg']
+    name: 'mathorboard',
+    description: 'Hey everyone, Solana OG here👋 IRL, I’m a computational research scientist focused on machine learning. I like to think of all of my generative work as a collaboration between my machine and me. Here is my take on ONE, coded with p5js:\n' +
+      '\n' +
+      'I started with the mental image of a motherboard as my inspiration. A motherboard is the central circuit within a computer, and the idea itself sort of acts as the motherboard of this algorithm. The different components of a motherboard serve different purposes for the circuit, just as the different shapes that compose the pieces evoke different feelings.\n' +
+      '\n' +
+      'The overlapping of shapes represents the way that distinct pieces of data are integrated in a computational model. For example, a natural language processor like ChatGPT uses learned relationships between words to dictate attention and ultimately lead to a focused output. These relationships can be represented in a 2D vector space as distance.\n' +
+      '\n' +
+      'From a random sampling of transactions, the first character of a blockhash determines how many groups of shapes there are in the piece and where they are placed. The sum of all characters (assigned numbers by alphabet order) in the blockhash determines color (including background, number of colors in the piece, and order of colors used). These two properties dictate the overall look and feel of the piece, similar to how a block describes the general functionality and sequence of blockchain events.\n' +
+      '\n' +
+      'The vote authority keypair and its sum determines the amount and size of vertical and horizontal glitch. The vote authority must handle many transactions, and the movement that the glitch creates represents this high-speed demand. It shows the challenges of receiving a bombardment of inputs, just like a vote authority, and just like us humans living in this age of big data with more information than we know how to process.\n' +
+      '\n' +
+      'Overall, the collection is unified in its color scheme, making it a cohesive ONE whole: it could depict one community, one transaction, one set of mint s(as is the case here), one idea, one network, one blockchain.\n' +
+      '\n' +
+      'I had so much fun reflecting on the prompt and collaborating with my computer to make the final product. Here are a sampling of five outputs, (originally 4000x4000 px, but scaled down for posting).\n' +
+      '\n' +
+      'I also posted a thread similar to this post on Twitter with a few more outputs if you are curious: https://x.com/subaruimpreza09/status/1746967587462791240?s=20',
+    authorGithub: 'subaruimpreza09',
+    authorTwitter: 'subaruimpreza09',
+    artPiecesUrl: ['/submissions/motherboard/1.png', '/submissions/motherboard/2.png', '/submissions/motherboard/3.png', '/submissions/motherboard/4.png', '/submissions/motherboard/5.png']
+  },
+  {
+    name: 'Introspection',
+    description: 'Introduction\n' +
+      '\n' +
+      'I am excited to present my first proposal for ONE made with React and Three.JS named Introspection.\n' +
+      'My concept revolves around mixing data visualization in a clean and pleasing way.\n' +
+      'Block art should in my opinion use has much data available from the block and transaction(s) that made the NFT come alive.\n' +
+      'It is to my knowledge the only attempt to have a proper visualization of a block on Solana, and maybe from any chain.\n' +
+      '\n' +
+      'Below, I outline the key features of this and most of my next proposals.\n' +
+      'Key Features and Goals\n' +
+      '\n' +
+      '    Everything has a meaning. From the width, height, depth of each block (one block = one transaction), to their colors.\n' +
+      '    Their size depends on the token volume within the transaction, the byte size of the transaction and the number of instructions it contains.\n' +
+      '    Blue blocks represents the mint attempts, and in some blocks it gets quite crazy, the green block is the transaction who won the mint, a black block is a transaction that was rejected/errored out. The blocks are arranged using a packing algorithm\n' +
+      '    Square Format: Each piece will be designed in a square format, ensuring uniformity and compatibility across various display platforms.\n' +
+      '    Visibility at a Distance: Careful consideration will be given to the composition and color contrast, ensuring each artwork maintains its appeal even when viewed from a distance.\n' +
+      '    Rarity Factors: Rarity will be derived from a combination of elements such as block ID, metadata, transactions, if the block ID is prime numbers or perfect numbers which are both related and use in cryptography.\n' +
+      '    Chaos and Uniqueness: The generation process is crafted to produce chaos/randomness, creating a collection of 10,000 unique pieces. The randomness may be driven by various transactions or block inputs.\n' +
+      '    Evaluation of Uniqueness: To assess the uniqueness of the generative system, each of my submissions has been simulated on more than 100 pieces. This is based on the principle that a good sample size for a collection of 10,000 is about 70 samples, as per Qualtrics\' guidelines on sample size.\n' +
+      '    Dark and White Modes: The pieces will be in dark or white modes, to make sure that collectors can collect the pieces that can look good in a white or dark environment/website.\n' +
+      '    Animated 3D View: An animated 3D view option will be available.\n' +
+      '    Color Palettes: The artworks will feature multiple color palettes, inspired by famous movies, artists, and the Solana ecosystem. Special palettes are available based on specific conditions.\n',
+    authorGithub: 'QTimort',
+    authorTwitter: 'TimortUnchained',
+    artPiecesUrl: ['/submissions/Introspection/0.png', '/submissions/Introspection/1.png', '/submissions/Introspection/2.png', '/submissions/Introspection/3.png', '/submissions/Introspection/4.png', '/submissions/Introspection/5.png', '/submissions/Introspection/6.png', '/submissions/Introspection/7.png']
+  },
+  {
+    name: 'ONE_BIT',
+    description: 'Introduction\n' +
+      '\n' +
+      'This will be my second proposal for ONE made using p5.js named ONE_BIT.\n' +
+      'My concept revolves around using the transactions contained within the block where the NFT was minted and display each transaction in a very minimalistic and clean way.\n' +
+      'Key Features and Goals\n' +
+      '\n' +
+      '    Please check my first proposal regarding the key features and goals as they are similar within all my proposals.\n' +
+      '    The algorithm uses perlin noise and transaction information to display interesting shapes and colors.\n' +
+      '    This proposal comes in dark mode only.\n',
+    authorGithub: 'QTimort',
+    authorTwitter: 'TimortUnchained',
+    artPiecesUrl: ['/submissions/ONE_BIT/1.png', '/submissions/ONE_BIT/2.png', '/submissions/ONE_BIT/3.png', '/submissions/ONE_BIT/4.png', '/submissions/ONE_BIT/5.png', '/submissions/ONE_BIT/6.png', '/submissions/ONE_BIT/7.png']
   },
   {
     name: 'clouds',
     description: 'This submission is called clouds it utilizes the parentslot and blocktime for the walk algorithm. The colors are currently chosen by using the last digit of the blockheight, but I will play around more with the incorporation of the data in the generation.',
     authorGithub: 'kub811',
     artPiecesUrl: ['/submissions/clouds/1.png', '/submissions/clouds/2.png', '/submissions/clouds/3.png', '/submissions/clouds/4.png']
-  },
-  {
-    name: 'The power of one',
-    description: 'Twitter username: ＠vfEHV4x9G30yLi3\n' +
-      '\n' +
-      'Title of the Work\n' +
-      'The power of one\n' +
-      '\n' +
-      'Description of the Work\n' +
-      'As a fan of One NFT, I\'ve always been fascinated by the eyes in the One avatar. They are cool and mysterious, like a galaxy in the night sky, illuminating everyone on the blockchain. Thus, this piece was born.\n' +
-      'The dataset I used primarily consists of \'slot\' and \'blockhashPickedNumber\'. Usually, the slot has nine digits, which I transformed into RGB values to serve as the main conditions affecting the color. The \'blockhashPickedNumber\' influences the complexity and brilliance of the graphics. Each stroke represents the encounters and collisions of One holders within the blockchain, eventually weaving together into a grand NFT project. With different \'blockhashPickedNumber\', this work can have countless variations (definitely more than 10,000), sometimes resembling an eye, sometimes the paths of Atlantis, and sometimes a galaxy…\n' +
-      'Let\'s play together!\n' +
-      '\n' +
-      'Language Used\n' +
-      'P5.js',
-    authorGithub: 'aa89150706',
-    authorTwitter: 'vfEHV4x9G30yLi3',
-    artPiecesUrl: ['/submissions/ThePowerOfOne/1.mp4', '/submissions/ThePowerOfOne/2.jpg', '/submissions/ThePowerOfOne/3.jpg', '/submissions/ThePowerOfOne/4.jpg', '/submissions/ThePowerOfOne/5.jpg', '/submissions/ThePowerOfOne/6.jpg']
   },
   {
     name: 'Digital hand print',
@@ -71,27 +110,6 @@ export const submissions: Submission[] = [
       'Here are 5 example renders created by PAINT PENDULUM algorithm:',
     authorGithub: 'DominikkMaximus',
     artPiecesUrl: ['/submissions/PaintPendulum/1.png', '/submissions/PaintPendulum/2.png', '/submissions/PaintPendulum/3.png', '/submissions/PaintPendulum/4.png', '/submissions/PaintPendulum/5.png']
-  },
-  {
-    name: 'mathorboard',
-    description: 'Hey everyone, Solana OG here👋 IRL, I’m a computational research scientist focused on machine learning. I like to think of all of my generative work as a collaboration between my machine and me. Here is my take on ONE, coded with p5js:\n' +
-      '\n' +
-      'I started with the mental image of a motherboard as my inspiration. A motherboard is the central circuit within a computer, and the idea itself sort of acts as the motherboard of this algorithm. The different components of a motherboard serve different purposes for the circuit, just as the different shapes that compose the pieces evoke different feelings.\n' +
-      '\n' +
-      'The overlapping of shapes represents the way that distinct pieces of data are integrated in a computational model. For example, a natural language processor like ChatGPT uses learned relationships between words to dictate attention and ultimately lead to a focused output. These relationships can be represented in a 2D vector space as distance.\n' +
-      '\n' +
-      'From a random sampling of transactions, the first character of a blockhash determines how many groups of shapes there are in the piece and where they are placed. The sum of all characters (assigned numbers by alphabet order) in the blockhash determines color (including background, number of colors in the piece, and order of colors used). These two properties dictate the overall look and feel of the piece, similar to how a block describes the general functionality and sequence of blockchain events.\n' +
-      '\n' +
-      'The vote authority keypair and its sum determines the amount and size of vertical and horizontal glitch. The vote authority must handle many transactions, and the movement that the glitch creates represents this high-speed demand. It shows the challenges of receiving a bombardment of inputs, just like a vote authority, and just like us humans living in this age of big data with more information than we know how to process.\n' +
-      '\n' +
-      'Overall, the collection is unified in its color scheme, making it a cohesive ONE whole: it could depict one community, one transaction, one set of mint s(as is the case here), one idea, one network, one blockchain.\n' +
-      '\n' +
-      'I had so much fun reflecting on the prompt and collaborating with my computer to make the final product. Here are a sampling of five outputs, (originally 4000x4000 px, but scaled down for posting).\n' +
-      '\n' +
-      'I also posted a thread similar to this post on Twitter with a few more outputs if you are curious: https://x.com/subaruimpreza09/status/1746967587462791240?s=20',
-    authorGithub: 'subaruimpreza09',
-    authorTwitter: 'subaruimpreza09',
-    artPiecesUrl: ['/submissions/motherboard/1.png', '/submissions/motherboard/2.png', '/submissions/motherboard/3.png', '/submissions/motherboard/4.png', '/submissions/motherboard/5.png']
   },
   {
     name: 'KLER',
@@ -151,46 +169,21 @@ export const submissions: Submission[] = [
     artPiecesUrl: ['/submissions/TheFirst25Transaction/1.gif', '/submissions/TheFirst25Transaction/2.gif', '/submissions/TheFirst25Transaction/3.gif', '/submissions/TheFirst25Transaction/4.gif']
   },
   {
-    name: 'Introspection',
-    description: 'Introduction\n' +
-      '\n' +
-      'I am excited to present my first proposal for ONE made with React and Three.JS named Introspection.\n' +
-      'My concept revolves around mixing data visualization in a clean and pleasing way.\n' +
-      'Block art should in my opinion use has much data available from the block and transaction(s) that made the NFT come alive.\n' +
-      'It is to my knowledge the only attempt to have a proper visualization of a block on Solana, and maybe from any chain.\n' +
-      '\n' +
-      'Below, I outline the key features of this and most of my next proposals.\n' +
-      'Key Features and Goals\n' +
-      '\n' +
-      '    Everything has a meaning. From the width, height, depth of each block (one block = one transaction), to their colors.\n' +
-      '    Their size depends on the token volume within the transaction, the byte size of the transaction and the number of instructions it contains.\n' +
-      '    Blue blocks represents the mint attempts, and in some blocks it gets quite crazy, the green block is the transaction who won the mint, a black block is a transaction that was rejected/errored out. The blocks are arranged using a packing algorithm\n' +
-      '    Square Format: Each piece will be designed in a square format, ensuring uniformity and compatibility across various display platforms.\n' +
-      '    Visibility at a Distance: Careful consideration will be given to the composition and color contrast, ensuring each artwork maintains its appeal even when viewed from a distance.\n' +
-      '    Rarity Factors: Rarity will be derived from a combination of elements such as block ID, metadata, transactions, if the block ID is prime numbers or perfect numbers which are both related and use in cryptography.\n' +
-      '    Chaos and Uniqueness: The generation process is crafted to produce chaos/randomness, creating a collection of 10,000 unique pieces. The randomness may be driven by various transactions or block inputs.\n' +
-      '    Evaluation of Uniqueness: To assess the uniqueness of the generative system, each of my submissions has been simulated on more than 100 pieces. This is based on the principle that a good sample size for a collection of 10,000 is about 70 samples, as per Qualtrics\' guidelines on sample size.\n' +
-      '    Dark and White Modes: The pieces will be in dark or white modes, to make sure that collectors can collect the pieces that can look good in a white or dark environment/website.\n' +
-      '    Animated 3D View: An animated 3D view option will be available.\n' +
-      '    Color Palettes: The artworks will feature multiple color palettes, inspired by famous movies, artists, and the Solana ecosystem. Special palettes are available based on specific conditions.\n',
-    authorGithub: 'QTimort',
-    authorTwitter: 'TimortUnchained',
-    artPiecesUrl: ['/submissions/Introspection/0.png', '/submissions/Introspection/1.png', '/submissions/Introspection/2.png', '/submissions/Introspection/3.png', '/submissions/Introspection/4.png', '/submissions/Introspection/5.png', '/submissions/Introspection/6.png', '/submissions/Introspection/7.png']
+    name: 'simplicity is the key',
+    description: 'I believe simplicity is the key. I have used blockhash,slot and blockhashpicked number to generate a not so random imagery. See below my work',
+    authorGithub: 'kevmau5',
+    artPiecesUrl: ['/submissions/SimplicityIsTheKey/1.png', '/submissions/SimplicityIsTheKey/2.png', '/submissions/SimplicityIsTheKey/3.png', '/submissions/SimplicityIsTheKey/4.png', '/submissions/SimplicityIsTheKey/5.png']
+  },{
+    name: 'Fractaloom',
+    description: 'A friend of mine working in web3 asked me to create some arts, so spent some spare time to it. I chose to create geometric art as it offers an effective means to produce distinct individual artworks within a large collection. I utilised the blockhashPickedNumber to select the color palettes and slot to manage the randomness of mathematical transformations applied to geometric shapes. This idea of doing mathematical transformations was inspired by the blockchain hashing transformations.',
+    authorGithub: 'Fractaloom',
+    artPiecesUrl: ['/submissions/Fractaloom/1.jpg', '/submissions/Fractaloom/2.jpg', '/submissions/Fractaloom/3.jpg', '/submissions/Fractaloom/4.jpg']
   },
   {
-    name: 'ONE_BIT',
-    description: 'Introduction\n' +
-      '\n' +
-      'This will be my second proposal for ONE made using p5.js named ONE_BIT.\n' +
-      'My concept revolves around using the transactions contained within the block where the NFT was minted and display each transaction in a very minimalistic and clean way.\n' +
-      'Key Features and Goals\n' +
-      '\n' +
-      '    Please check my first proposal regarding the key features and goals as they are similar within all my proposals.\n' +
-      '    The algorithm uses perlin noise and transaction information to display interesting shapes and colors.\n' +
-      '    This proposal comes in dark mode only.\n',
-    authorGithub: 'QTimort',
-    authorTwitter: 'TimortUnchained',
-    artPiecesUrl: ['/submissions/ONE_BIT/1.png', '/submissions/ONE_BIT/2.png', '/submissions/ONE_BIT/3.png', '/submissions/ONE_BIT/4.png', '/submissions/ONE_BIT/5.png', '/submissions/ONE_BIT/6.png', '/submissions/ONE_BIT/7.png']
+    name: 'Astros',
+    description: 'Title: Astros',
+    authorGithub: 'DaniloCostaUX',
+    artPiecesUrl: ['/submissions/Astros/1.jpg', '/submissions/Astros/2.jpg', '/submissions/Astros/3.jpg', '/submissions/Astros/4.jpg', '/submissions/Astros/5.jpg']
   },
   {
     name: '0xFADED',
@@ -232,12 +225,6 @@ export const submissions: Submission[] = [
     authorGithub: 'QTimort',
     authorTwitter: 'TimortUnchained',
     artPiecesUrl: ['/submissions/Tapis/1.png', '/submissions/Tapis/2.png', '/submissions/Tapis/3.png', '/submissions/Tapis/4.png', '/submissions/Tapis/5.png', '/submissions/Tapis/6.png']
-  },
-  {
-    name: 'simplicity is the key',
-    description: 'I believe simplicity is the key. I have used blockhash,slot and blockhashpicked number to generate a not so random imagery. See below my work',
-    authorGithub: 'kevmau5',
-    artPiecesUrl: ['/submissions/SimplicityIsTheKey/1.png', '/submissions/SimplicityIsTheKey/2.png', '/submissions/SimplicityIsTheKey/3.png', '/submissions/SimplicityIsTheKey/4.png', '/submissions/SimplicityIsTheKey/5.png']
   },
   {
     name: '',
@@ -365,12 +352,6 @@ export const submissions: Submission[] = [
       'The background is uniquely generated by blockhash and the colour pallete by slot. Every piece is unique and telling a story about the block it was minted in.',
     authorGithub: 'macovei009',
     artPiecesUrl: ['/submissions/Michelangelo/1.png', '/submissions/Michelangelo/2.png', '/submissions/Michelangelo/3.png', '/submissions/Michelangelo/4.png', '/submissions/Michelangelo/5.png']
-  },
-  {
-    name: 'Astros',
-    description: 'Title: Astros',
-    authorGithub: 'DaniloCostaUX',
-    artPiecesUrl: ['/submissions/Astros/1.jpg', '/submissions/Astros/2.jpg', '/submissions/Astros/3.jpg', '/submissions/Astros/4.jpg', '/submissions/Astros/5.jpg']
   }
 ]
 
