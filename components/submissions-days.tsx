@@ -14,6 +14,7 @@ import {shuffleArray} from "@/utils/array";
 import {useWindowSize} from "@/components/use-window-size";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ScrollToTop from "@/components/scroll-top-top";
+import {getSubmissionKey} from "@/utils/submission";
 
 const renderVideoUrl = (video: any) => {
   return (
@@ -30,7 +31,7 @@ export default function SubmissionsDays(day:any) {
   if(day.day ==1){
     sortedSubmissions=submissions.slice(0, 13)
   } else{
-    sortedSubmissions=submissions.slice(-10)
+    sortedSubmissions=submissions.slice(-12)
 
   }
   return (
@@ -38,7 +39,7 @@ export default function SubmissionsDays(day:any) {
       <div className="mt-8 w-full">
         {
           sortedSubmissions.map((s, idx) => (
-            <Card key={idx} className={'border-gray-600 border-1 rounded my-8 md:my-16'}>
+            <Card key={getSubmissionKey(s)} className={'border-gray-600 border-1 rounded my-8 md:my-16'}>
               <CardHeader className="justify-between">
                 <div className="flex gap-5">
                   <Avatar isBordered radius="full" size="md" color={'primary'} src={'/'}/>
