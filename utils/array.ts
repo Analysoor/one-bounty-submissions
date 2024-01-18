@@ -1,15 +1,16 @@
 export function shuffleArray<T>(array: T[]) {
-  let currentIndex = array.length, temporaryValue, randomIndex;
+  const newArray = [...array];
+  let currentIndex = newArray.length, temporaryValue, randomIndex;
 
   while (currentIndex !== 0) {
 
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
 
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
+    temporaryValue = newArray[currentIndex];
+    newArray[currentIndex] = newArray[randomIndex];
+    newArray[randomIndex] = temporaryValue;
   }
 
-  return array;
+  return newArray;
 }
