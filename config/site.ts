@@ -13,7 +13,7 @@ export const siteConfig = {
 			href: "/day/1",
 		},
 		{
-			label: "Voting Day2",
+			label: "Voting Day 2",
 			href: "/day/2",
 		},
 	],
@@ -27,7 +27,7 @@ export const siteConfig = {
 			href: "/day/1",
 		},
 		{
-			label: "Voting Day2",
+			label: "Voting Day 2",
 			href: "/day/2",
 		}
 	],

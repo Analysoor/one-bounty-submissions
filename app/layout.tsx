@@ -7,6 +7,7 @@ import { Navbar } from "@/components/navbar";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
 import { Analytics } from '@vercel/analytics/react';
+import { Ga4Init } from '@/components/analytics'
 
 export const metadata: Metadata = {
 	title: {
@@ -39,6 +40,8 @@ export default function RootLayout({
 					fontSans.variable
 				)}
 			>
+
+			<Ga4Init/>
 			<Analytics/>
 			<Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
 					<div className="relative flex flex-col">

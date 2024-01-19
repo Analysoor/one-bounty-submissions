@@ -4,10 +4,12 @@ import { button as buttonStyles } from "@nextui-org/theme";
 import { title, subtitle } from "@/components/primitives";
 import {GithubIcon,DiscordIcon} from "@/components/icons";
 import SubmissionsDays from "@/components/submissions-days";
+import { Ga4SendPageview } from "@/components/analytics";
 
 export default function Day1() {
 	return (
 		<section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
+			<Ga4SendPageview />
 			<div className="inline-block max-w-lg text-center justify-center">
 				<h1 className={title({color: "blue"})}>ONE</h1>
 				<br/>
