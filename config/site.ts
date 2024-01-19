@@ -12,6 +12,10 @@ export const siteConfig = {
 			label: "Voting Day 1",
 			href: "/day/1",
 		},
+		{
+			label: "Voting Day2",
+			href: "/day/2",
+		},
 	],
 	navMenuItems: [
 		{
@@ -21,6 +25,10 @@ export const siteConfig = {
 		{
 			label: "Voting Day 1",
 			href: "/day/1",
+		},
+		{
+			label: "Voting Day2",
+			href: "/day/2",
 		}
 	],
 	links: {
